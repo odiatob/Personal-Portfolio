@@ -47,16 +47,23 @@ export default function Homepage() {
     {
       title: "SafeTag (Emergency Website for DLSL Students)",
       description: "A full-featured online store with Stripe integration, user authentication, and a custom CMS for product management.",
-      tech: ["Next.js", "React", "Tailwind CSS", "Firebase", "Stripe"],
+      tech: ["Next.js", "React", "Tailwind CSS", "Supabase"],
       imageUrl:"/safe.png",
       link: "https://github.com/Cean175/SafeTag.git"
     },
     {
       title: "Job Finder from API data (Mobile App)",
       description: "An interactive dashboard for visualizing complex datasets, built with D3.js for custom charts and graphs.",
-      tech: ["React", "D3.js", "Node.js", "Express"],
-      imageUrl: "https://placehold.co/600x400/1e293b/a3a3a3?text=Dashboard",
+      tech: ["React", "Expo Dev", "Node.js", "API"],
+      imageUrl: "/api.png",
       link: "https://github.com/odiatob/JobFinder-MobApp.git"
+    },
+    {
+      title: "Farmers Market",
+      description: "An interactive dashboard for visualizing complex datasets, built with D3.js for custom charts and graphs.",
+      tech: ["React", "Next.js", "Node.js", "API"],
+      imageUrl: "/LK.png",
+      link: "https://github.com/odiatob/Farmers.git"
     },
   ];
   
@@ -145,19 +152,14 @@ export default function Homepage() {
               </ul>
             </div>
             <div className="md:col-span-2">
-               <div className="w-full max-w-sm mx-auto p-1 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg shadow-2xl transform transition-transform hover:scale-105 duration-500">
-                <div className="bg-slate-800 rounded-md">
-                     {/* FIXED: Local images must be placed in the `public` folder 
-                        and referenced with a leading slash `/`.
-                        Make sure you have a '2x2.png' file in your project's 'public' directory.
-                     */}
-                     <Image
-                        src="/2x2.png" 
-                        alt="A professional headshot of Arvin Zoleta"
-                        width={500}
-                        height={500}
-                        className="rounded-md object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                      />
+              <div className="w-full max-w-xs mx-auto mb-14 p-1 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg shadow-2xl transform transition-transform hover:scale-105 duration-500">
+                <div className="relative aspect-square bg-slate-800 rounded-md">
+                  <Image
+                    src="/2x2.png" 
+                    alt="A professional headshot of Arvin Zoleta"
+                    fill
+                    className="rounded-md object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  />
                 </div>
               </div>
             </div>
