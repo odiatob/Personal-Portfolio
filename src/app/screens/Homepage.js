@@ -64,7 +64,6 @@ export default function Homepage() {
       tech: ["React", "Next.js", "Node.js", "API"],
       imageUrl: "/LK.png",
       link: "https://farmers-ud6h.vercel.app/"
-"
     },
   ];
   
