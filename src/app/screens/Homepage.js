@@ -49,7 +49,7 @@ export default function Homepage() {
       description: "A full-featured online store with Stripe integration, user authentication, and a custom CMS for product management.",
       tech: ["Next.js", "React", "Tailwind CSS", "Supabase"],
       imageUrl:"/safe.png",
-      link: "https://github.com/Cean175/SafeTag.git"
+      link: "https://safetag-h39z.vercel.app/"
     },
     {
       title: "Job Finder from API data (Mobile App)",
@@ -63,7 +63,8 @@ export default function Homepage() {
       description: "An interactive dashboard for visualizing complex datasets, built with D3.js for custom charts and graphs.",
       tech: ["React", "Next.js", "Node.js", "API"],
       imageUrl: "/LK.png",
-      link: "https://github.com/odiatob/Farmers.git"
+      link: "https://farmers-ud6h.vercel.app/"
+"
     },
   ];
   
