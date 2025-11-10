@@ -46,7 +46,7 @@ export default function Homepage() {
   const projects = [
     {
       title: "SafeTag (Emergency Website for DLSL Students)",
-      description: "A full-featured online store with Stripe integration, user authentication, and a custom CMS for product management.",
+      description: "A real-time emergency alert and redirection system for DLSL students that notifies of ongoing emergencies everywhere except the login page, offering escalating information and contact links for location-specific assistance.",
       tech: ["Next.js", "React", "Tailwind CSS", "Supabase"],
       imageUrl:"/ST.png",
       link: "https://safetag-h39z.vercel.app/"
@@ -60,7 +60,7 @@ export default function Homepage() {
     },
     {
       title: "Farmers Market",
-      description: "An interactive dashboard for visualizing complex datasets, built with D3.js for custom charts and graphs.",
+      description: "A direct farm-to-consumer online marketplace for Filipino farmers, built with an emphasis on empowering sellers and ensuring fair profit by facilitating the sale of the freshest local produce..",
       tech: ["React", "Next.js", "Node.js", "API"],
       imageUrl: "/LK.png",
       link: "https://farmers-ud6h.vercel.app/"
