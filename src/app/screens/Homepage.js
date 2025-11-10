@@ -48,7 +48,7 @@ export default function Homepage() {
       title: "SafeTag (Emergency Website for DLSL Students)",
       description: "A full-featured online store with Stripe integration, user authentication, and a custom CMS for product management.",
       tech: ["Next.js", "React", "Tailwind CSS", "Supabase"],
-      imageUrl:"/safe.png",
+      imageUrl:"/ST.png",
       link: "https://safetag-h39z.vercel.app/"
     },
     {
