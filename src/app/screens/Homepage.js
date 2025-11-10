@@ -60,7 +60,7 @@ export default function Homepage() {
     },
     {
       title: "Farmers Market",
-      description: "A direct farm-to-consumer online marketplace for Filipino farmers, built with an emphasis on empowering sellers and ensuring fair profit by facilitating the sale of the freshest local produce..",
+      description: "A direct farm-to-consumer online marketplace for Filipino farmers, built with an emphasis on empowering sellers and ensuring fair profit by facilitating the sale of the freshest local produce.",
       tech: ["React", "Next.js", "Node.js", "API"],
       imageUrl: "/LK.png",
       link: "https://farmers-ud6h.vercel.app/"
