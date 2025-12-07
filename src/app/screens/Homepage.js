@@ -155,7 +155,7 @@ export default function Homepage() {
               <div className="w-full max-w-xs mx-auto mb-14 p-1 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg shadow-2xl transform transition-transform hover:scale-105 duration-500">
                 <div className="relative aspect-square bg-slate-800 rounded-md">
                   <Image
-                    src="/22222x22222.jpg" 
+                    src="/22222X22222.jpg" 
                     alt="Arvin Zoleta"
                     fill
                     className="rounded-md object-cover grayscale hover:grayscale-0 transition-all duration-500"
