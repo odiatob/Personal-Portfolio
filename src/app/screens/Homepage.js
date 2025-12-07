@@ -49,7 +49,7 @@ export default function Homepage() {
       description: "A real-time emergency alert and redirection system for DLSL students that notifies of ongoing emergencies everywhere except the login page, offering escalating information and contact links for location-specific assistance.",
       tech: ["Next.js", "React", "Tailwind CSS", "Supabase"],
       imageUrl:"/ST.png",
-      link: "https://safetag-h39z.vercel.app/"
+      link: "https://safetag-rose.vercel.app/"
     },
     {
       title: "Job Finder from API data (Mobile App)",
@@ -101,11 +101,11 @@ export default function Homepage() {
         </nav>
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-slate-800">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
-              <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium hover:text-cyan-400" onClick={() => setIsMenuOpen(false)}>About</a>
-              <a href="#projects" className="block px-3 py-2 rounded-md text-base font-medium hover:text-cyan-400" onClick={() => setIsMenuOpen(false)}>Projects</a>
-              <a href="#contact" className="block px-3 py-2 rounded-md text-base font-medium hover:text-cyan-400" onClick={() => setIsMenuOpen(false)}>Contact</a>
+          <div className="md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md border-b border-slate-800 shadow-xl">
+            <div className="px-6 py-8 space-y-6 flex flex-col items-center">
+              <a href="#about" className="text-lg font-medium text-slate-300 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>About</a>
+              <a href="#projects" className="text-lg font-medium text-slate-300 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Projects</a>
+              <a href="#contact" className="text-lg font-medium text-slate-300 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</a>
             </div>
           </div>
         )}
@@ -113,12 +113,12 @@ export default function Homepage() {
       
       <main className="container mx-auto px-6">
         {/* --- Hero Section --- */}
-        <section id="hero" className="min-h-screen flex items-center">
+        <section id="hero" className="min-h-screen flex items-center pt-16 md:pt-0">
           <div className="max-w-3xl">
-            <p className="text-cyan-400 text-lg mb-2">Hi, my name is</p>
-            <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">Arvin Zoleta.</h1>
-            <h2 className="text-4xl md:text-6xl font-bold text-slate-400 mt-2 tracking-tight">I build things for the web.</h2>
-            <p className="mt-6 text-lg text-slate-400">
+            <p className="text-cyan-400 text-base md:text-lg mb-2">Hi, my name is</p>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight">Arvin Zoleta.</h1>
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-slate-400 mt-2 tracking-tight">I build things for the web.</h2>
+            <p className="mt-6 text-base md:text-lg text-slate-400">
               I'm a computer science student based in Lipa City, Philippines, specializing in creating (and occasionally designing) exceptional, high-quality websites and applications. I'm passionate about building modern, responsive, and user-friendly digital experiences.
             </p>
             <a href="#projects" className="inline-block mt-8 bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105">
@@ -128,10 +128,10 @@ export default function Homepage() {
         </section>
 
         {/* --- About Section --- */}
-        <section id="about" className="py-20 md:py-32">
+        <section id="about" className="py-16 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-16 items-center">
             <div className="md:col-span-3">
-              <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 flex items-center">
                 <span className="text-cyan-400 mr-3">01.</span> About Me
               </h2>
               <p className="mb-4">
@@ -155,8 +155,8 @@ export default function Homepage() {
               <div className="w-full max-w-xs mx-auto mb-14 p-1 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg shadow-2xl transform transition-transform hover:scale-105 duration-500">
                 <div className="relative aspect-square bg-slate-800 rounded-md">
                   <Image
-                    src="/2x2.png" 
-                    alt="A professional headshot of Arvin Zoleta"
+                    src="/22222x22222.jpg" 
+                    alt="Arvin Zoleta"
                     fill
                     className="rounded-md object-cover grayscale hover:grayscale-0 transition-all duration-500"
                   />
@@ -167,8 +167,8 @@ export default function Homepage() {
         </section>
 
         {/* --- Projects Section --- */}
-        <section id="projects" className="py-20 md:py-32">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">
+        <section id="projects" className="py-16 md:py-32">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center">
              <span className="text-cyan-400">02.</span> Some Things I've Built
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -200,9 +200,9 @@ export default function Homepage() {
         </section>
 
         {/* --- Contact Section --- */}
-        <section id="contact" className="py-20 md:py-32 text-center">
-            <h2 className="text-2xl font-bold text-white mb-2"><span className="text-cyan-400">03.</span> What's Next?</h2>
-            <h3 className="text-5xl font-bold text-white mb-4">Get In Touch</h3>
+        <section id="contact" className="py-16 md:py-32 text-center">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-2"><span className="text-cyan-400">03.</span> What's Next?</h2>
+            <h3 className="text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h3>
             <p className="max-w-xl mx-auto text-slate-400 mb-8">
                 I'm currently open to new opportunities and my inbox is always open. Whether you have a question, a project proposal, or just want to say hi, I'll get back to you!
             </p>
