@@ -209,7 +209,7 @@ export default function Homepage() {
 
       {/* --- Header & Navigation --- */}
       <header className="sticky top-0 z-50 bg-[#0a192f]/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
-        <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <nav className="container mx-auto px-6 py-4 flex justify-between items-center relative z-50">
           <a href="#" className="text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors">
             AZ.
           </a>
@@ -224,36 +224,34 @@ export default function Homepage() {
           </div>
           {/* Mobile Nav Button */}
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="focus:outline-none">
               {isMenuOpen ? <CloseIcon className="h-8 w-8 text-cyan-400" /> : <MenuIcon className="h-8 w-8 text-cyan-400" />}
             </button>
           </div>
         </nav>
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-[#112240] border-b border-slate-800 shadow-2xl">
-            <div className="px-6 py-10 space-y-8 flex flex-col items-center">
-              <a href="#about" className="text-lg font-medium text-slate-300 hover:text-cyan-400" onClick={() => setIsMenuOpen(false)}>01. About</a>
-              <a href="#projects" className="text-lg font-medium text-slate-300 hover:text-cyan-400" onClick={() => setIsMenuOpen(false)}>02. Projects</a>
-              <a href="#leadership" className="text-lg font-medium text-slate-300 hover:text-cyan-400" onClick={() => setIsMenuOpen(false)}>03. Leadership</a>
-              <a href="#contact" className="text-lg font-medium text-cyan-400 border border-cyan-400 px-6 py-2 rounded hover:bg-cyan-400/10" onClick={() => setIsMenuOpen(false)}>Contact</a>
+        <div className={`md:hidden fixed inset-0 bg-[#0a192f]/95 backdrop-blur-xl z-40 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} flex items-center justify-center`}>
+            <div className="flex flex-col items-center space-y-8 text-center p-8">
+              <a href="#about" className="text-2xl font-medium text-slate-300 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}><span className="block text-sm text-cyan-400 mb-1 font-mono">01.</span> About</a>
+              <a href="#projects" className="text-2xl font-medium text-slate-300 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}><span className="block text-sm text-cyan-400 mb-1 font-mono">02.</span> Projects</a>
+              <a href="#leadership" className="text-2xl font-medium text-slate-300 hover:text-cyan-400 transition-colors" onClick={() => setIsMenuOpen(false)}><span className="block text-sm text-cyan-400 mb-1 font-mono">03.</span> Leadership</a>
+              <a href="#contact" className="text-xl font-medium text-cyan-400 border border-cyan-400 px-8 py-3 rounded hover:bg-cyan-400/10 transition-all" onClick={() => setIsMenuOpen(false)}>Say Hello</a>
             </div>
-          </div>
-        )}
+        </div>
       </header>
       
       <main className="container mx-auto px-6 md:px-12 lg:px-24">
         {/* --- Hero Section --- */}
-        <section id="hero" className="min-h-screen flex items-center justify-start pt-0">
+        <section id="hero" className="min-h-screen flex items-center justify-start pt-0 pb-20 md:pb-0">
           <div className="max-w-4xl space-y-6">
             <p className="text-cyan-400 text-lg font-mono">Hi, my name is</p>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-slate-100 tracking-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-slate-100 tracking-tight">
               Arvin Zoleta.
             </h1>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-400 tracking-tight">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-slate-400 tracking-tight">
               I build things for the web.
             </h2>
-            <p className="max-w-xl text-lg text-slate-400 leading-relaxed">
+            <p className="max-w-xl text-base md:text-lg text-slate-400 leading-relaxed">
               I'm a computer science student based in Lipa City, Philippines, specializing in creating (and occasionally designing) exceptional, high-quality websites and applications. I'm passionate about building modern, responsive, and user-friendly digital experiences.
             </p>
             <div className="pt-8">
@@ -265,7 +263,7 @@ export default function Homepage() {
         </section>
 
         {/* --- About Section --- */}
-        <section id="about" className="py-24 md:py-32">
+        <section id="about" className="py-16 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-8 flex items-center">
@@ -311,7 +309,7 @@ export default function Homepage() {
         </section>
 
         {/* --- Projects Section --- */}
-        <section id="projects" className="py-24 md:py-32">
+        <section id="projects" className="py-16 md:py-32">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-12 flex items-center">
              <span className="text-cyan-400 font-mono text-xl mr-2">02.</span> 
              <span className="whitespace-nowrap">Some Things I've Built</span>
@@ -360,7 +358,7 @@ export default function Homepage() {
         </section>
 
         {/* --- Leadership Section --- */}
-        <section id="leadership" className="py-24 md:py-32 max-w-4xl mx-auto">
+        <section id="leadership" className="py-16 md:py-32 max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-12 flex items-center justify-center md:justify-start">
              <span className="text-cyan-400 font-mono text-xl mr-2">03.</span> 
              <span className="whitespace-nowrap">Leadership & Organizations</span>
@@ -386,10 +384,10 @@ export default function Homepage() {
         </section>
 
         {/* --- Contact Section --- */}
-        <section id="contact" className="py-24 md:py-32 text-center max-w-2xl mx-auto">
+        <section id="contact" className="py-16 md:py-32 text-center max-w-2xl mx-auto">
             <p className="text-cyan-400 font-mono mb-4 text-sm md:text-base">04. What's Next?</p>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">Get In Touch</h3>
-            <p className="text-slate-400 mb-12 text-lg leading-relaxed">
+            <p className="text-slate-400 mb-12 text-base md:text-lg leading-relaxed">
                 I'm currently open to new opportunities and my inbox is always open. Whether you have a question, a project proposal, or just want to say hi, I'll get back to you!
             </p>
             <button onClick={() => setIsContactOpen(true)} className="inline-block border border-cyan-400 text-cyan-400 font-mono px-8 py-4 rounded hover:bg-cyan-400/10 transition-all duration-300">
