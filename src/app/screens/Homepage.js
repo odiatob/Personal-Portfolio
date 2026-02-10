@@ -159,6 +159,12 @@ export default function Homepage() {
   // TODO: Update these details with the specific information from your resume.
   const leadership = [
     {
+      role: "Intern",
+      organization: "Knowles Training Institute",
+      period: "2026-Present",
+      description: "Interned at Knowles Training Institute, assisting training operations and gaining hands‑on professional experience."
+    },
+    {
       role: "Member / Web Developer",
       organization: "Final Thesis",
       period: "2025",
@@ -252,7 +258,7 @@ export default function Homepage() {
               I build things for the web.
             </h2>
             <p className="max-w-xl text-base md:text-lg text-slate-400 leading-relaxed">
-              I'm a computer science student based in Lipa City, Philippines, specializing in creating (and occasionally designing) exceptional, high-quality websites and applications. I'm passionate about building modern, responsive, and user-friendly digital experiences.
+              I'm a computer science student based in Lipa City, Batangas in Philippines, specializing in creating (and occasionally designing) exceptional, high-quality websites and applications. I'm passionate about building modern, responsive, and user-friendly digital experiences.
             </p>
             <div className="pt-8">
                 <a href="#projects" className="inline-block border-2 border-cyan-400 text-cyan-400 font-mono text-sm px-8 py-4 rounded hover:bg-cyan-400/10 transition-all duration-300 shadow-[0_0_15px_-3px_rgba(6,182,212,0.2)] hover:shadow-[0_0_20px_-3px_rgba(6,182,212,0.4)]">
