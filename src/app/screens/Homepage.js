@@ -140,8 +140,10 @@ export default function Homepage() {
       link: "https://safetag-rose.vercel.app/"
     },
     {
-      title: "Job Finder from API data (Mobile App)",
-      description: "An interactive dashboard for visualizing complex datasets, built with React.js for viewing job listings fetched from an external API.",
+      title: "LifeStyle Routine",
+      description: "A website that helps users create, track, and personalize daily habits and routines through an interactive onboarding process and behavior tracking system."
+
+",
       tech: ["React", "Expo Dev", "Node.js", "API"],
       imageUrl: "/api.png",
       link: "https://github.com/odiatob/JobFinder-MobApp.git"
@@ -161,8 +163,8 @@ export default function Homepage() {
     {
       role: "Intern",
       organization: "Knowles Training Institute",
-      period: "2026-Present",
-      description: "Interned at Knowles Training Institute, assisting training operations and gaining hands‑on professional experience."
+      period: "February 2026- April 2026",
+      description: "Interned at Knowles Training Institute, assisting training operations and gaining hands‑on professional experience using WordPress(Elementor)."
     },
     {
       role: "Member / Web Developer",
@@ -194,7 +196,7 @@ export default function Homepage() {
     }
   ];
   
-  const skills = ["JavaScript", "HTML", "CSS", "React", "Next.js", "Tailwind CSS", "Figma", "Supabase", "Firebase", "UI/UX Design", "Git & GitHub", "Python ", "Node.js", "Machine Learning", "Vercel"];
+  const skills = ["JavaScript", "HTML", "CSS", "React", "Next.js", "Tailwind CSS", "Figma", "Supabase", "Firebase", "UI/UX Design", "Git & GitHub", "Python ", "Node.js", "Machine Learning", "Vercel", "WordPress"];
 
 
   return (
@@ -255,7 +257,7 @@ export default function Homepage() {
               Arvin Zoleta.
             </h1>
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-slate-400 tracking-tight">
-              I build things for the web.
+              I build websites and applications for fun and corporate purposes.
             </h2>
             <p className="max-w-xl text-base md:text-lg text-slate-400 leading-relaxed">
               I'm a computer science student based in Lipa City, Batangas in Philippines, specializing in creating (and occasionally designing) exceptional, high-quality websites and applications. I'm passionate about building modern, responsive, and user-friendly digital experiences.
