@@ -141,9 +141,7 @@ export default function Homepage() {
     },
     {
       title: "LifeStyle Routine",
-      description: "A website that helps users create, track, and personalize daily habits and routines through an interactive onboarding process and behavior tracking system."
-
-",
+      description: "A website that helps users create, track, and personalize daily habits and routines through an interactive onboarding process and behavior tracking system",
       tech: ["React", "Expo Dev", "Node.js", "API"],
       imageUrl: "/api.png",
       link: "https://github.com/odiatob/JobFinder-MobApp.git"
