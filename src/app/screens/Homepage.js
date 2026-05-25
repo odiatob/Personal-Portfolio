@@ -129,8 +129,6 @@ export default function Homepage() {
       });
   };
 
-  // --- Mock Data ---
-  // In a real app, you might fetch this from a CMS or API.
   const projects = [
     {
       title: "SafeTag (Emergency Website for DLSL Students)",
@@ -143,16 +141,23 @@ export default function Homepage() {
       title: "LifeStyle Routine",
       description: "A website that helps users create, track, and personalize daily habits and routines through an interactive onboarding process and behavior tracking system",
       tech: ["React", "Expo Dev", "Node.js", "API"],
-      imageUrl: "/api.png",
+      imageUrl: "/LR.png",
       link: "https://github.com/odiatob/JobFinder-MobApp.git"
     },
     {
       title: "Farmers Market",
       description: "A direct farm-to-consumer online marketplace for Filipino farmers, built with an emphasis on empowering sellers and ensuring fair profit by facilitating the sale of the freshest local produce.",
-      tech: ["React", "Next.js", "Node.js", "API", "Supabase"],
+      tech: ["React", "Next.js", "Node.js", "Supabase", "Vercel"],
       imageUrl: "/LK.png",
       link: "https://farmers-ud6h.vercel.app/"
     },
+    {
+      title: "Bites and Bao Website",
+      description: "A direct online marketplace for xiao lang bao lovers in Lipa City, Batangas.",
+      tech: ["React", "Next.js", "Tailwind CSS", "Vercel", "Supabase"],
+      imageUrl: "/bnb.png",
+      link: "https://bitesandbao.vercel.app/"
+    }
   ];
 
   /* --- Leadership & Organizations Data --- */
