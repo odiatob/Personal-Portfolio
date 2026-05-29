@@ -142,7 +142,7 @@ export default function Homepage() {
       description: "A website that helps users create, track, and personalize daily habits and routines through an interactive onboarding process and behavior tracking system",
       tech: ["React", "Expo Dev", "Node.js", "API"],
       imageUrl: "/LR.png",
-      link: "https://github.com/odiatob/JobFinder-MobApp.git"
+      link: "https://lifestyle-routine.vercel.app/"
     },
     {
       title: "Farmers Market",
@@ -157,11 +157,16 @@ export default function Homepage() {
       tech: ["React", "Next.js", "Tailwind CSS", "Vercel", "Supabase"],
       imageUrl: "/bnb.png",
       link: "https://bitesandbao.vercel.app/"
+    },
+    {
+      title: "Date Invitation Website",
+      description: "A romantic and interactive website designed to invite a special someone on a date, featuring personalized messages, multimedia content, and a memorable user experience.",
+      tech: ["Next.js", "React", "Tailwind CSS", "Vercel"],
+      imageUrl: "/date.png",
+      link: "https://date-invitation-chi.vercel.app/"
     }
   ];
 
-  /* --- Leadership & Organizations Data --- */
-  // TODO: Update these details with the specific information from your resume.
   const leadership = [
     {
       role: "Intern",
