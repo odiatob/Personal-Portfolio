@@ -156,7 +156,7 @@ export default function Homepage() {
       description: "A direct online marketplace for xiao lang bao lovers in Lipa City, Batangas.",
       tech: ["React", "Next.js", "Tailwind CSS", "Vercel", "Supabase"],
       imageUrl: "/bnb.png",
-      link: "https://bitesandbao.vercel.app/"
+      link: "https://bitesnbao.vercel.app/"
     },
     {
       title: "Date Invitation Website",
